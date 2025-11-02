@@ -11,7 +11,7 @@ let nextApp;
 let server;
 
 // 设置应用名称和用户数据路径
-app.setName('DanmuTV');
+app.setName('筱筱影视');
 const userDataPath = path.join(app.getPath('appData'), 'DanmuTV');
 app.setPath('userData', userDataPath);
 
