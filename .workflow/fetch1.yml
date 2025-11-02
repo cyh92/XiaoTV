@@ -1,0 +1,57 @@
+version: '1.0'
+name: fetch1
+displayName: fetch1
+triggers:
+  trigger: auto
+  schedule:
+    - cron: '* * */2 * * ? *'
+variables:
+  global:
+    - TOKEN
+    - TOKEN2
+    - cnb
+stages:
+  - name: fetchurl
+    displayName: fetchurl
+    strategy: naturally
+    trigger: auto
+    steps:
+      - step: build@nodejs
+        name: fetchurl
+        displayName: fetchurl
+        nodeVersion: 21.5.0
+        commands:
+          - git clone https://gitee.com/cyh92/migu_video.git
+          - '# git clone https://develop202:${GITHUB_TOKEN}@github.com/develop202/migu_video.git'
+          - cd migu_video
+          - '# 设置NPM源，提升安装速度'
+          - npm config set registry https://registry.npmmirror.com
+          - '# 执行编译命令 '
+          - '# npm install && node fetchURLByWasm.js'
+          - '# npm install && node fetchURLByAndroid.js'
+          - '# npm install && node fetchURLByAndroidV2.js'
+          - '#npm install && node fetchURLByAndroid720p.js'
+          - '# npm install && node fetchURLByWasmV2.js'
+          - npm run install-and-build
+          - git config user.name "Gitee流水线"
+          - git config user.email "actions@githee.com"
+          - git add .
+          - '# gitee流水线提交 '
+          - git diff --quiet && git diff --staged --quiet || git commit -m "Update by Autorun"
+          - git push -f https://cyh92:${TOKEN}@gitee.com/cyh92/migu_video.git cyh-dev:cyh-dev
+          - git push -f https://cnb:${cnb}@cnb.cool/my_team/mi_gu main:main
+          - '#git push'
+          - cd ..
+          - ls
+          - git clone https://gitee.com/cyh92/live.git
+          - cp migu_video/interface.txt live/source/migu.txt
+          - cd live
+          - ls
+          - git config user.name "migu流水线"
+          - git config user.email "actions@githee.com"
+          - git add .
+          - git diff --quiet && git diff --staged --quiet || git commit -m "Update by migu流水线"
+          - git push -f https://cyh92:${TOKEN}@gitee.com/cyh92/live.git main:main&git push -f https://cyh92:${TOKEN2}@gitcode.com/cyh92/live.git main:main&git remote add backup https://gitcode.com/cyh92/live.git
+        strategy:
+          retry: '0'
+          timeout: 2
