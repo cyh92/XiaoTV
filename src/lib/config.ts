@@ -48,7 +48,7 @@ export function getCacheTime(): number {
 export async function getConfig(): Promise<any> {
   return {
     SiteConfig: {
-      SiteName: 'DanmuTV',
+      SiteName: '筱筱影视',
       SearchDownstreamMaxPage: 5,
       ImageProxy: '',
       DoubanProxy: '',

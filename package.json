@@ -1,5 +1,5 @@
 {
-  "name": "danmutv",
+  "name": "xiaotv",
   "version": "1.2.0",
   "description": "基于 MoonTV 二次开发的支持弹幕的桌面影视播放器",
   "main": "electron/main.js",
@@ -58,8 +58,8 @@
     "wait-on": "^8.0.1"
   },
   "build": {
-    "appId": "com.danmutv.app",
-    "productName": "DanmuTV",
+    "appId": "com.xiaotv.app",
+    "productName": "XiaoTV",
     "directories": {
       "output": "release"
     },
@@ -121,6 +121,8 @@
     },
     "nsis": {
       "oneClick": false,
+      "perMachine": true,
+      "shortcutName": "筱筱影视",
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true

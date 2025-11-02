@@ -1,3 +1,11 @@
+/*
+ * @Author: cyh92 cyh92@live.cn
+ * @Date: 2025-11-02 20:47:51
+ * @LastEditors: cyh92 cyh92@live.cn
+ * @LastEditTime: 2025-11-02 22:17:54
+ * @FilePath: \DanmuTV\src\app\layout.tsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import type { Metadata, Viewport } from 'next';
@@ -15,10 +23,10 @@ const inter = Inter({ subsets: ['latin'] });
 
 // 动态生成 metadata
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'DanmuTV - 弹幕影视播放器';
+  const title = '筱筱影视 - 弹幕影视播放器';
   return {
     title: title,
-    description: 'DanmuTV - 弹幕影视播放器',
+    description: '筱筱影视  - 弹幕影视播放器',
     manifest: '/manifest.json',
     icons: {
       icon: [
@@ -38,7 +46,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const siteName = 'DanmuTV';
+  const siteName = '筱筱影视';
   const announcement = '本应用仅提供影视信息搜索服务,所有内容均来自第三方网站。本站不存储任何视频资源。';
   
   // 运行时配置

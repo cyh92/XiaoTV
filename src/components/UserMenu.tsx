@@ -1078,7 +1078,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
           <div className='space-y-1'>
             <div className='flex items-center justify-between'>
               <div className='font-semibold text-gray-900 dark:text-gray-100 text-sm'>
-                DanmuTV
+                筱筱视频
               </div>
               <div className='text-[10px] text-gray-400 dark:text-gray-500'>
                 桌面版

@@ -71,7 +71,7 @@ async function createWindow() {
     height: 800,
     minWidth: 800,
     minHeight: 600,
-    title: 'DanmuTV',
+    title: 'XiaoTV',
     backgroundColor: '#1a1a1a',
     autoHideMenuBar: true, // 自动隐藏菜单栏（按 Alt 键可显示）
     webPreferences: {
