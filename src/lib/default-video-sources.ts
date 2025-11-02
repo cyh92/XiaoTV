@@ -17,20 +17,6 @@ export const DEFAULT_VIDEO_SOURCES: VideoSource[] = [
     disabled: false,
   },
   {
-    key: 'heimuer',
-    name: '黑木耳',
-    api: 'https://json.heimuer.xyz/api.php/provide/vod',
-    detail: 'https://heimuer.tv',
-    disabled: false,
-  },
-  {
-    key: 'heimuer2',
-    name: '黑木耳点播',
-    api: 'https://json02.heimuer.xyz/api.php/provide/vod',
-    detail: 'https://json02.heimuer.xyz',
-    disabled: false,
-  },
-  {
     key: 'ruyi',
     name: '如意资源',
     api: 'http://cj.rycjapi.com/api.php/provide/vod',
@@ -122,13 +108,6 @@ export const DEFAULT_VIDEO_SOURCES: VideoSource[] = [
     disabled: false,
   },
   {
-    key: 'mozhua',
-    name: '魔爪资源',
-    api: 'https://mozhuazy.com/api.php/provide/vod',
-    detail: '',
-    disabled: false,
-  },
-  {
     key: 'mdzy',
     name: '魔都资源',
     api: 'https://www.mdzyapi.com/api.php/provide/vod',
@@ -140,13 +119,6 @@ export const DEFAULT_VIDEO_SOURCES: VideoSource[] = [
     name: '魔都动漫',
     api: 'https://caiji.moduapi.cc/api.php/provide/vod',
     detail: 'https://caiji.moduapi.cc',
-    disabled: false,
-  },
-  {
-    key: 'zuid',
-    name: '最大资源',
-    api: 'https://api.zuidapi.com/api.php/provide/vod',
-    detail: '',
     disabled: false,
   },
   {
@@ -206,13 +178,6 @@ export const DEFAULT_VIDEO_SOURCES: VideoSource[] = [
     disabled: false,
   },
   {
-    key: 'ikun',
-    name: 'iKun资源',
-    api: 'https://ikunzyapi.com/api.php/provide/vod',
-    detail: '',
-    disabled: false,
-  },
-  {
     key: 'lzi',
     name: '量子资源站',
     api: 'https://cj.lziapi.com/api.php/provide/vod',
@@ -220,31 +185,10 @@ export const DEFAULT_VIDEO_SOURCES: VideoSource[] = [
     disabled: false,
   },
   {
-    key: 'xiaomaomi',
-    name: '小猫咪资源',
-    api: 'https://zy.xmm.hk/api.php/provide/vod',
-    detail: '',
-    disabled: false,
-  },
-  {
-    key: '1080zy',
-    name: '1080资源',
-    api: 'https://api.1080zyku.com/inc/api_mac10.php',
-    detail: 'https://api.1080zyku.com',
-    disabled: false,
-  },
-  {
     key: 'ckzy',
     name: 'CK资源',
     api: 'https://ckzy.me/api.php/provide/vod',
     detail: 'https://ckzy.me',
-    disabled: false,
-  },
-  {
-    key: 'ukuapi',
-    name: 'U酷资源',
-    api: 'https://api.ukuapi.com/api.php/provide/vod',
-    detail: 'https://api.ukuapi.com',
     disabled: false,
   },
   {
@@ -283,13 +227,6 @@ export const DEFAULT_VIDEO_SOURCES: VideoSource[] = [
     disabled: false,
   },
   {
-    key: 'baiduyun',
-    name: '百度云资源',
-    api: 'https://api.apibdzy.com/api.php/provide/vod',
-    detail: 'https://api.apibdzy.com',
-    disabled: false,
-  },
-  {
     key: 'suoni',
     name: '索尼资源',
     api: 'https://suoniapi.com/api.php/provide/vod',
@@ -315,13 +252,6 @@ export const DEFAULT_VIDEO_SOURCES: VideoSource[] = [
     name: '虎牙资源',
     api: 'https://www.huyaapi.com/api.php/provide/vod',
     detail: 'https://www.huyaapi.com',
-    disabled: false,
-  },
-  {
-    key: 'haohua',
-    name: '豪华资源',
-    api: 'https://hhzyapi.com/api.php/provide/vod',
-    detail: 'https://hhzyapi.com',
     disabled: false,
   },
   {
@@ -358,63 +288,7 @@ export const DEFAULT_VIDEO_SOURCES: VideoSource[] = [
     api: 'https://p2100.net/api.php/provide/vod',
     detail: 'https://p2100.net',
     disabled: false,
-  },
-  {
-    key: 'iqiyi',
-    name: 'iqiyi资源',
-    api: 'https://www.iqiyizyapi.com/api.php/provide/vod',
-    detail: '',
-    disabled: false,
-  },
-  {
-    key: 'fengchao',
-    name: '蜂巢片库',
-    api: 'https://api.fczy888.me/api.php/provide/vod',
-    detail: '',
-    disabled: false,
-  },
-  {
-    key: 'dadi',
-    name: '大地资源',
-    api: 'https://dadiapi.com/api.php/provide/vod',
-    detail: '',
-    disabled: false,
-  },
-  {
-    key: 'kuaiche',
-    name: '快车资源',
-    api: 'https://caiji.kuaichezy.org/api.php/provide',
-    detail: '',
-    disabled: false,
-  },
-  {
-    key: 'youzhizy',
-    name: '优质资源',
-    api: 'https://api.yzzy-api.com/inc/ldg_api_all.php/provide/vod',
-    detail: '',
-    disabled: false,
-  },
-  {
-    key: 'fantuan',
-    name: '饭团影视',
-    api: 'https://www.fantuan.tv/api.php/provide/vod/',
-    detail: '',
-    disabled: false,
-  },
-  {
-    key: 'taopian',
-    name: '淘片资源',
-    api: 'https://taopianapi.com/cjapi/sda/vod',
-    detail: '',
-    disabled: false,
-  },
-  {
-    key: 'huawei8',
-    name: '华为吧资源',
-    api: 'https://huawei8.live/api.php/provide/vod',
-    detail: '',
-    disabled: false,
-  },
+  }
 ];
 
 /**
