@@ -19,6 +19,7 @@ stages:
           - npm install -g pnpm
           - pnpm install
           - pnpm electron:build:linux
+          - cd release
           - ls
         strategy:
           retry: '0'
