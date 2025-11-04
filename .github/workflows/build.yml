@@ -75,11 +75,9 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}-$(date +"%Y%m%d%H%M")
           files: release-artifacts/**/*
-          body: |
-            ## 🎉 DanmuTV ${{ github.ref_name }}
-            
+          body: |            
             基于 [MoonTV](https://github.com/MoonTechLab/LunaTV) 二次开发的弹幕影视播放器
             
             ### ✨ 主要功能
