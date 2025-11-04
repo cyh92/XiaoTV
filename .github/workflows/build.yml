@@ -53,7 +53,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: danmutv-${{ matrix.os }}
+          name: XiaoTV-${{ matrix.os }}
           path: |
             release/*.exe
             release/*.dmg
