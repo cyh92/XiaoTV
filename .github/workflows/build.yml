@@ -60,9 +60,6 @@ jobs:
             release/*.AppImage
             release/*.deb
             release/*.rpm
-            release/*.zip
-            release/*.blockmap
-            release/*.yml
 
   release:
     needs: build
