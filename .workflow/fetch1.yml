@@ -18,7 +18,7 @@ stages:
         commands:
           - npm install -g pnpm
           - pnpm install
-          - pnpm electron:build:win
+          - pnpm electron:build:linux
           - ls
         strategy:
           retry: '0'
