@@ -18,7 +18,13 @@ stages:
         commands:
           - npm install -g pnpm
           - pnpm install
+        strategy:
+          retry: '0'
+      - step: build@nodejs
+        name: build_nodejs
+        displayName: WinBuild
+        nodeVersion: 21.5.0
+        commands:
           - pnpm electron:build:win
         strategy:
           retry: '0'
-          timeout: 2
